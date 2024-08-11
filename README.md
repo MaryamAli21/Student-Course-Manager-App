@@ -1,6 +1,4 @@
 ![bg](https://github.com/user-attachments/assets/7773ff3e-0dd5-45a5-b89b-ef9da57edfbe)
-
-![SCM. APP - Student Course Manager App](logo.png)
 # Scope
 The system is aimed at total user-friendly as well as efficient management of varied tasks. These tasks may range from registering new students, managing and previewing their courses and lessons,  to help the management handle the essential features necessary for making the administrative of an institute effective.
 
