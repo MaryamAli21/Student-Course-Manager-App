@@ -1,0 +1,60 @@
+
+<%- include('../partials/_header.ejs') %>
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    
+  </head>
+  <%- include('../partials/_nav.ejs') %>
+  <body>
+    <h1>Edit Student</h1>
+    <a href="/students">Back to Students Records Dashboard.</a>
+    <main>
+
+      <section id="add-student">
+          <h2>Edit Student</h2>
+          <section id="edit-student">
+            <form id="student-update-form" >
+                <input type="text" id="student-id" name="id" value="<%= student._id %>" hidden aria-hidden>
+              <div>
+                <label for="student-name">Student Name</label>
+                <input type="text" id="student-name" name="name" value="<%= student.name %>" required>
+              </div>
+          
+              <div>
+                <label for="student-contact">Contact</label>
+                <input type="text" id="student-contact" name="contact" value="<%= student.contact %>">
+              </div>
+              
+              <div>
+                <label for="student-email">Email</label>
+                <input type="text" id="student-email" name="email" value="<%= student.email %>">
+              </div>
+              
+              <div>
+                <label for="student-course">Course</label>
+                <select id="student-course" name="course" required>
+                  <% courses.forEach((course) => { %>
+                    <option value="<%= course._id %>" <%= student.course._id.toString() === course._id.toString() ? 'selected' : '' %>><%= course.name %></option>
+                  <% }); %>
+                </select>
+              </div>
+          
+              <div>
+                <button type="submit">Update Student</button>
+              </div>
+            </form>
+          </section>
+          
+      </section>
+
+  </main>
+
+
+<script src="/js/student.js"></script>
+  </body>
+</html>
+
+
+
+
+

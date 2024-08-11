@@ -1,0 +1,47 @@
+
+<%- include('../partials/_header.ejs') %>
+    <title>Add a New Record</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    
+  </head>
+  <%- include('../partials/_nav.ejs') %>
+  <body>
+    <h1>Add a New Student Course Record.</h1>
+    <a href="/courses">Back to Course Records Dashboard.</a>
+    <main>
+
+ 
+      <section id="add-course">
+          <h2>Add Course</h2>
+          <form id="course-form">
+            <label for="course-name">Course Name</label>
+            <input type="text" id="course-name" required>
+
+            <h4>Lessons</h4>
+            <div id="lessons-container">
+                <div class="lesson-item">
+                    <input type="text" name="lessons[]" class="lessons-input" placeholder="Lesson name" required>
+                    <button type="button" class="remove-lesson">Remove</button>
+                </div>
+            </div>
+            <button type="button" id="add-lesson">Add Lesson</button>
+
+            <div>
+              <button type="submit">Add Course</button>
+              </div>
+          </form>
+      </section>
+
+  </main>
+
+  <form>
+    <button type="button" id="viewCoursesRecords" class="button is-primary">View All Courses</button>
+</form>
+<script src="/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

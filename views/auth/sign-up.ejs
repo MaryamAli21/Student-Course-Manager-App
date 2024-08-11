@@ -1,0 +1,19 @@
+<%- include('../partials/_header.ejs') %>
+    <title>Sign Up</title>
+  </head <link rel="stylesheet" href="/stylesheet/style.css" include="/partials/_header" >>
+  <body>
+    <h1>Please create a new account to continue.</h1>
+    <br>
+    <form classroom="sign" action="/auth/sign-up" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" name="confirmPassword" id="confirmPassword" />
+      <label for="studentname">Studentname:</label>
+      <input type="text" name="studentname" id="studentname" />
+      <button type="submit" classroom="button">Sign up</button>
+    </form>
+  </body>
+</html>

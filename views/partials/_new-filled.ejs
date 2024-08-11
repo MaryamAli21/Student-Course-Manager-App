@@ -1,0 +1,39 @@
+
+<form action="/course" method="POST">
+    <fieldset>
+        <legend>Students:</legend>
+            <% for(let i = 1; i <= 30; i++) { %>
+            <div>    
+                <label for="student<%= i %>name">Student <%= i %> Name:</label>
+                <input type="text" name="student<%= i %>name" id="student<%= i %>name" value="<%= course.studentNames[i-1] %>" <% if(i < 3) { %>required<% } %> />
+                <label for="student<%= i %>grade">Student <%= i %> Grade:</label>
+                <input type="text" name="student<%= i %>grade" id="student<%= i %>grade" value="<%= course.studentGrades[i-1] %>" />
+            </div>
+            <% } %>
+    </fieldset>
+    <fieldset>
+        <legend>Progress Grade:</legend>
+        <div class="progress">
+            <% for (let i = 1; i <= 10; i++) { %>
+                <div class="radio">
+                    <input type="radio" name="progress" id="progress" value="<%= i %>" <% if (Number(course.progress) === i) { %>checked<% }; %> />
+                    <label for="progress"><%= i %></label>
+                </div>
+            <% }; %>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Class</legend>
+        <h4>You must submit 12 weeks different Class Lessons.</h4>
+        <% for (let i = 1; i <= 10; i++) { %>
+            <div>
+                <label for="classroom-lesson-<%= i %>">Lesson <%= i %>:</label>
+                <select name="classroom-lesson-<%= i %>" id="classroom-lesson-<%= i %>" required>
+                        <option value="">--Class Lesson <%= i %>--</option>
+                    <% classroomLessons.forEach ((lesson) => { %>
+                        <option value="<%= lesson._id %>" <% if (lesson._id.toString() === course.classroomIds[i-1]) { %>selected<% }; %>><%= lesson.name %></option>
+                    <% }); %>
+                </select>
+            </div>
+        <% }; %>
+    </fieldset>

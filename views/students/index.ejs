@@ -1,0 +1,42 @@
+
+<%- include('../partials/_header.ejs') %>
+</head </head <link rel="stylesheet" href="/stylesheet/style.css" include="/partials/_header" >
+    <title>Students</title>
+<body>
+    <h1><%= user.username %>'s  Student Records</h1>
+    
+    <h2>Students:</h2>
+    
+    <p><a class="" href="/students/new">Create new student</a></p>
+    
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>Course</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% students.forEach(student => { %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.email %></td>
+        <td><%= student.contact %></td>
+        <td><%= student.course.name %></td>
+        <td>
+          <a href="/students/<%= student._id %>/edit">Edit</a> |
+          <a href="/students/<%= student._id %>/delete" onclick="return confirm('Are you sure you want to delete this student?');">Delete</a>
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+    <br>
+  
+    <p><a class="sign-out" href="/">Home</a></p>
+    <p><a class="sign-out" href="/auth/sign-out">Sign out</a></p>
+</body>
+</html>

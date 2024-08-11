@@ -1,0 +1,56 @@
+
+<%- include('../partials/_header.ejs') %>
+    <title>Add a New Record</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    
+  </head>
+  <%- include('../partials/_nav.ejs') %>
+  <body>
+    <h1>Add a New Student</h1>
+    <a href="/students">Back to Students Records Dashboard.</a>
+    <main>
+
+      <section id="add-student">
+          <h2>Add Student</h2>
+      <form id="student-form">
+          <div>
+              <label for="student-name">Student Name</label>
+            <input type="text" id="student-name" name="name" required>
+          </div>
+
+        <div>
+          <label for="student-contact">Contact</label>
+          <input type="text" id="student-contact" name="contact" >
+        </div>
+          
+        <div>
+          <label for="student-email">Email</label>
+          <input type="text" id="student-email" name="email" >
+        </div>
+        
+        <div>
+        <label for="student-course">Course</label>
+        <select id="student-course" required>
+          <% courses.forEach((course) => { %>
+            <option value=<%= course._id %>><%= course.name %></option>
+            <% }); %>
+          </select>
+        </div>
+
+            <div>
+              <button type="submit">Add Student</button>
+              </div>
+          </form>
+      </section>
+
+  </main>
+
+
+<script src="/js/student.js"></script>
+  </body>
+</html>
+
+
+
+
+

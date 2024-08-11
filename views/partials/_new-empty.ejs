@@ -1,0 +1,37 @@
+<form action="/courses" method="POST">
+    <fieldset>
+        <legend>Students:</legend>
+            <% for(let i = 1; i <= 30; i++) { %>
+            <div>    
+                <label for="student<%= i %>name">Student <%= i %> Name:</label>
+                <input type="text" name="student<%= i %>name" id="student<%= i %>name" <% if(i < 3) { %>required<% } %> />
+                <label for="student<%= i %>grade">Student <%= i %> Grade:</label>
+                <input type="text" name="student<%= i %>grade" id="student<%= i %>grade" />
+            </div>
+            <% } %>
+    </fieldset>
+    <fieldset>
+        <legend>Progress Grade:</legend>
+        <div class="progress">    
+            <% for (let i = 1; i <= 10; i++) { %>
+                <div class="radio">
+                    <input class="radio" type="radio" name="progress" id="progress" value="<%= i %>" />
+                    <label for="progress"><%= i %></label>
+                </div>
+            <% }; %>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Class</legend>
+        <% for (let i = 1; i <= 12; i++) { %>
+            <div>
+                <label for="classroom-lesson-<%= i %>">Lesson <%= i %>:</label>
+                <select name="classroom-lesson-<%= i %>" id="classroom-lesson-<%= i %>" required>
+                        <option value="">--Class Lesson <%= i %>--</option>
+                    <% classroomLessons.forEach ((lesson) => { %>
+                        <option value="<%= lesson._id %>"><%= lesson.name %></option>
+                    <% }); %>
+                </select>
+            </div>
+        <% }; %>
+    </fieldset>
