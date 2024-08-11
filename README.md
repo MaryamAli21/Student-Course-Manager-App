@@ -4,8 +4,8 @@
 The system is aimed at total user-friendly as well as efficient management of varied tasks. These tasks may range from registering new students, managing and previewing their courses and lessons,  to help the management handle the essential features necessary for making the administrative of an institute effective.
 
 # Getting Started
-[Start here!](https://maryamali21.github.io/Student-Course-Manager-App/)
-[Planing Materials](https://[https://miro.com/app/board/uXjVKyokqwk=/?share_link_id=132287352484])
+[The Old Repo With ALL The Materials!](https://github.com/MaryamAli21/Project-2.git)
+[Planing Materials in Miro ](https://[https://miro.com/app/board/uXjVKyokqwk=/?share_link_id=132287352484])
 
 # Technologies Used
 This app was coded using MEN Stack (MongoDB, Express, Node.js).
