@@ -14,8 +14,11 @@ The system is aimed at total user-friendly as well as efficient management of va
 This app was coded using MEN Stack (MongoDB, Express, Node.js).
 
 # Screenshots
-(logo.png)
-(logo.png)
+<img width="1468" alt="Screenshot 2024-08-11 at 3 55 20 PM" src="https://github.com/user-attachments/assets/3d89dad7-4c14-44cc-a0f2-6a0f5e354131">
+<img width="1470" alt="Screenshot 2024-08-11 at 3 53 29 PM" src="https://github.com/user-attachments/assets/130331dd-2738-4ed1-af81-7257b86bb87f">
+<img width="1470" alt="Screenshot 2024-08-11 at 3 54 02 PM" src="https://github.com/user-attachments/assets/280a7b11-1fb7-41a4-bddd-624b9443fe42">
+
+
 (logo.png)
 
 Technologies Used
