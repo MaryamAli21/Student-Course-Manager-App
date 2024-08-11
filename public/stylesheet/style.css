@@ -1,160 +1,58 @@
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html {
-  background-color: #EBEBEB;
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
-a {
-  color: gray;
-  text-decoration: none;
-  padding: 0.25rem 0.2rem;
-  border-radius: 0.5rem;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  background-color: lightgrey;
-}
-
-nav {
-  display: flex;
-  background-color: aliceblue;
-  justify-content: space-around;
-  align-items: center;
-  height: 6vh;
-  width: 100vw;
-  top: 0;
-}
-
-nav div {
-  display: flex;
-  justify-content: center;
-}
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url('/ab.jpg');
+  font-family: Arial, sans-serif; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  height: 100vh; 
   display: flex;
   flex-direction: column;
-  background-color: #EBEBEB;
   align-items: center;
   justify-content: center;
 }
 
-form.sign {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-}
 
 h1 {
-  font-size: 2rem;
-  margin: 0.5rem auto;
+  text-align: center;
+  color: #333; 
+  margin-bottom: 20px;
 }
+
 
 p {
-  margin: 0.45rem auto;
+  text-align: center;
+  color: #ffffff;
 }
 
-input {
-  margin: 0.45rem auto;
+
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
-select {
-  margin: 0.3rem auto;
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-legend {
-  font-size: 1rem;
-  font-weight: bold;
-}
 
-li.courselist {
-  a {
-      color: black;
-      text-decoration: none;
-      background-color: #EBEBEB;
-  }
-  a:hover {
-      text-decoration: underline;
-  }
-  a:active {
-      background-color: lightgrey;
-  }
-  margin: 0.5rem;
-}
-
-.button {
-  border: 0;
-  border-radius: 0.25rem;
-  background: rgb(37, 69, 233);
+button, a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
   color: white;
-  font-size: 1rem;
-  line-height: 1.2;
-  white-space: nowrap;
+  background-color: #2a6aae; 
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem;
+  text-align: center;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button#danger {
-  background: rgb(221, 49, 49);
+button:hover, a:hover {
+  background-color: #0056b3; 
 }
-
-div.progress {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: flex-start;
-}
-
-div.radio {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.3rem;
-}
-
-input.radio {
-  margin: 0;
-}
-
-div.show-students {
-  display: flex;
-  flex-flow: column wrap;
-  margin: 0.5rem auto;
-}
-
-div.show-class {
-  display: flex;
-  flex-flow: column wrap;
-  margin: 0.5rem auto;
-}
-
-div.show-progress {
-  display: flex;
-  flex-flow: column wrap;
-  margin: 0.5rem auto;
-}
-
-div#show {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-div.footer {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-} */
