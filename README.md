@@ -1,3 +1,4 @@
+![bg](https://github.com/user-attachments/assets/7773ff3e-0dd5-45a5-b89b-ef9da57edfbe)
 
 ![SCM. APP - Student Course Manager App](logo.png)
 # Scope
