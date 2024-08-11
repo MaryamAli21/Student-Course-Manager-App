@@ -19,7 +19,6 @@ This app was coded using MEN Stack (MongoDB, Express, Node.js).
 <img width="1470" alt="Screenshot 2024-08-11 at 3 54 02 PM" src="https://github.com/user-attachments/assets/280a7b11-1fb7-41a4-bddd-624b9443fe42">
 
 
-(logo.png)
 
 Technologies Used
 This game was coded using Javascript CSS and  HTML.
